@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.16",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.19"
+  },
+  "name": "4---stats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
