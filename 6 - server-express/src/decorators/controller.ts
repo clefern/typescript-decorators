@@ -22,7 +22,7 @@ export const bodyValidators = (keys: string[]) => {
 };
 
 export const Controller = (routePrefix: string) => {
-  return function (target: Function, key: string, desc: PropertyDescriptor) {
+  return (target: Function) => {
     const router = AppRouter.getInstance();
     for (let key in target.prototype) {
       const handler = target.prototype[key];
